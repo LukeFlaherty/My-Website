@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Luke</title>
+	
+	<!-- adds the icon in the search bar -->
+	<link rel="icon" href="/images/lukelogo.gif">
+
+<!-- styles -->
+    <!-- gets a font off of google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
+    <!-- more fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- different bootstrap and owl carolsel css styles -->
+    <link rel="stylesheet" href="styles/animate.css">
+	<link rel="stylesheet" href="styles/owl.carousel.min.css">
+	<link rel="stylesheet" href="styles/owl.theme.default.min.css">
+	<link rel="stylesheet" href="styles/magnific-popup.css">
+	<link rel="stylesheet" href="styles/flaticon.css">
+	<link rel="stylesheet" href="styles/style.css">
+
+</head>
+<!-- to update the nav bar as I scroll (learned from w3Schools-->
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <!-- creates a bootstrap navbar -->
+    <!-- bg-dark for color -->
+    <!-- ftco still a bit hazy about it but has to do with bootstrap navbar/menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <!-- convainer div to hold our UL of LIs -->
+        <div class="container">
+            <!-- navbar-brand so that I can click on the logo to return to home page -->
+            <!-- The span for the period so I can control it what the word looks like-->
+            <a href="index.html" class="navbar-brand">Luke<span>.</span></a>
+            <!-- for when you choose a menu option to move down the page provides a smooth transition -->
+            <!-- button for the menu -->
+            <!-- copy and pasted all the functioning things -->
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"</span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+                    <!-- menu navbar items here -->
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span >About</span></a></li>
+                    <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+                    <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#references-section" class="nav-link"><span>References</span></a></li>
+                    <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
+
+				</ul>
+			</div>
+        </div> <!-- end container div  -->
+    </nav>
+
+    <!-- hero class is a bootstrap thing -->
+    <!-- it has two sliders for each of the two rotating owl carosel pages -->
+    <section id="homeSection" class="hero">
+        <div class="home-slider owl-carousel">
+
+            <!-- first slider item -->
+            <div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/picTwo.png);">
+							<!-- <div class="overlay"></div> -->
+							<!-- <div class="overlay-1"></div> -->
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! My name is Luke</span>
+                                <h1 class="mb-4 mt-3">Ambitious and <span>Creative</span> Student</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            
+            <!-- second silder item -->
+            <div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/horizontalSerious.jpeg);">
+							<!-- <div class="overlay"></div> -->
+							<!-- <div class="overlay-1"></div> -->
+						</div>
+						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! My name is Luke</span>
+                                <h1 class="mb-4 mt-3">I love designing, <span>Engineering</span>, and making things.</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </div>
+    </section>
+
+
+
+    <!-- number nav bar below the intro image but before the about me section -->
+    <section class="ftco-counter img bg-light" id="section-counter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-suitcase"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="12">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-loyalty"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="10">0</strong>
+							<span>Good Grades</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-coffee"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="6">0</strong>
+							<span>Familiar Languages</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-calendar"></span>
+						</div>
+						<div class="text">
+							<strong class="number" data-number="2">0</strong>
+							<span>Years of experience</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+    
+
+
+    <!-- about me section -->
+    <section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/verticalBoat.jpeg);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+					<div class="py-md-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<span class="subheading">My Introduction</span>
+								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
+								<p>This is where I will eventually tell you something interesting about myself that makes you go oh wow he seems like a cool guy I'd like to hire.</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Name:</span> <span>Luke Flaherty</span></li>
+									<li class="d-flex"><span>Date of birth:</span> <span>March 4, 2001</span></li>
+									<li class="d-flex"><span>Address:</span> <span>1205 University Walk Circle, Charlotte, NC </span></li>
+									<li class="d-flex"><span>Zip code:</span> <span>28213</span></li>
+									<li class="d-flex"><span>Email:</span> <span>lflaher2@uncc.edu</span></li>
+									<li class="d-flex"><span>Phone: </span> <span>+1-252-294-5950</span></li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="my-interest d-lg-flex w-100">
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-vector"></span>
+										</div>
+										<div class="text">AI Student</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-web-programming"></span>
+										</div>
+										<div class="text">Web Dev</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-suitcase"></span>
+										</div>
+										<div class="text">Travel</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="flaticon-football"></span>
+										</div>
+										<div class="text">Sports</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+    <!-- this is the skills section with the circle meters  -->
+    <section class="ftco-section bg-light" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Skills</span>
+					<h2 class="mb-4">My Skills</h2>
+					<p>These are the things I have stumbled across while learning and seem to have picked up along the way!</p>
+				</div>
+            </div>
+            
+            <!-- title for progress wheel 2 -->
+			<div class="row progress-circle mb-5">
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Java</h2>
+
+						<!-- Progress wheel 1 -->
+						<div class="progress mx-auto" data-value='92'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">92<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- end of progress wheel 1 -->
+
+						<!-- a simple 2 paned span divided info section underneath the progress wheel -->
+						<!-- <div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+							</div>
+						</div> -->
+						
+					</div>
+				</div>
+                
+                <!-- title for progress wheel 2 -->
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">HTML5 & CSS3</h2>
+
+						<!-- Progress wheel 2 -->
+						<div class="progress mx-auto" data-value='84'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">84<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<!-- end of progress wheel 2 -->
+
+						<!-- a simple 2 paned span divided info section underneath the progress wheel -->
+						<!-- <div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+							</div>
+						</div> -->
+					</div>
+				</div>
+
+                <!-- title for progress wheel 3 -->
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">JavaScript</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='68'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">68<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+						<!-- a simple 2 paned span divided info section underneath the progress wheel -->
+						<!-- <div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+							</div>
+                        </div> -->
+                        <!-- end of preogress wheel 3 -->
+					</div>
+				</div>
+
+                <!-- title for progress wheel 4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='71'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">71<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+						<!-- a simple 2 paned span divided info section underneath the progress wheel -->
+						<!-- <div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+							</div>
+                        </div> -->
+                        <!-- end of progress wheel 4 -->
+					</div>
+				</div>
+
+                <!-- title for progress wheel 5 -->
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Kotlin </h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='52'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">52<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+						<!-- a simple 2 paned span divided info section underneath the progress wheel -->
+						<!-- <div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+							</div>
+                        </div> -->
+                        <!-- end of progress wheel 5 -->
+					</div>
+				</div>
+
+                <!-- title for progress wheel 6 -->
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Electrical Engineering</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='47'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">47<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+						<!-- a simple 2 paned span divided info section underneath the progress wheel -->
+						<!-- <div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+							</div>
+                        </div> -->
+                        <!-- end of progress wheel 6 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+    <!-- projects section -->
+    <section class="ftco-section ftco-project" id="projects-section">
+		<div class="container-fluid px-md-4">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Projects</span>
+					<h2 class="mb-4">My Projects</h2>
+					<p>A few things I've thrown together here or there that I am proud of!</p>
+					<p>Read more about them in my BLOG section!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Robotics</h3>
+							<p>A robot who moves on his own and, using sensors, avoids objects around the room.  Built with Legos, a Raspberry Pi, UltraSonic Sensor, and AA batteries.</p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Web Application</h3>
+							<p>A chat app that allows two user on the same local network to chat back and forth, disconnections detected.</p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Web Application</h3>
+							<p>A quiz app that allows you to give randomized quizzes from a list of questions that are stored in JSON format.</p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-branding"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Responsive Business Website</h3>
+							<p>A beginner webpage I built for a car detailing business that is responsive on all devices.</p>
+						</div>
+					</div> 
+				</div>
+            </div>
+            
+            <!-- second row of projects -->
+            <div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Loading...</h3>
+							<p>In the progress of adding to the webpage.</p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Loading...</h3>
+							<p>In the progress of adding to the webpage.</p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Loading...</h3>
+							<p>In the progress of adding to the webpage.</p>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Loading...</h3>
+							<p>In the progress of adding to the webpage.</p>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+    </section>
+    
+
+    <!-- section for if they want to hear more about these projects -->
+    <section class="ftco-hireme">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-8 col-lg-8 d-flex align-items-center">
+					<div class="w-100 py-4">
+						<h2>Would you like to hear more?</h2>
+                        <p>I can not possibly tell you everything I learned from each of these projects with the little space I have above.  As well as words can not explain how much each project meant to me.  I would love to talk about any one of them!</p>
+                        <p>Feel free to send me an email, text, or phone call!</p>
+                        <!-- sends them up to my contact information -->
+                            <p class="mb-0"><a href="#about-section" class="btn btn-white py-3 px-4">Contact me</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+    <!-- references section -->
+    <section id="references-section" class="ftco-section testimony-section bg-primary">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+					<span class="subheading">References</span>
+					<h2 class="mb-4">Professors, Teachers, and Mentors</h2>
+					<p>What Professors, Teachers, and Mentors have to say about me!</p>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+                                    <span class="fa fa-quote-left"></span>
+                                    <!-- what they have to say -->
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<div class="d-flex align-items-center">
+                                        <!-- add profile picture here -->
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+                                            <!-- name of reference -->
+                                            <p class="name">Adam Whaley</p>
+                                            <!-- relationship to Me -->
+											<span class="position">Professor</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">"Luke’s drive, motivation and passion for technology never cease to amaze me. His creativity is only surpassed by his curiosity. Luke is consistently striving to improve his skill. He openly seeks guidance from experts and makes prudent decisions. I am privileged to work with him. He is a future leader in the computer science field with an extremely bright future."</p>
+									<div class="d-flex align-items-center">
+                                        <!-- add profile picture here -->
+										<div class="user-img" style="background-image: url(images/Brandy\ photo\ 2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Brandy Turner</p>
+											<span class="position">Academic Advisor</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<div class="d-flex align-items-center">
+                                        <!-- add profile picture here -->
+										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Sandy Hanson</p>
+											<span class="position">Professor</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<div class="d-flex align-items-center">
+                                        <!-- add profile picture here -->
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Nadia Campbell</p>
+											<span class="position">Emerging Leaders Coordinator</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">“If I only had one word to describe Luke it would be inspirational. Luke demands attention when he walks into a room but does so in a manner that makes all feel welcomed. As Luke’s mentor I was able to see him adjust to his surroundings at UNC Charlotte while also creating a space of transparency and vulnerability to all he interacted with. He continues to be the light of the room and I am so grateful to have been his mentor. He takes charge of projects, adds a humorous tone to all around, and makes everyone feel welcomed no matter the task”.</p>
+									<div class="d-flex align-items-center">
+                                        <!-- add profile picture here -->
+										<div class="user-img" style="background-image: url(images/christina.jpeg)"></div>
+										<div class="pl-3">
+											<p class="name">Christina Freeman</p>
+											<span class="position">Emerging Leaders Peer Assisted Leader</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+
+
+
+<!-- the section for adding blog posts  -->
+<!-- not complete because I have no blog posts but when I make them this is a good outline to get me started -->
+<section class="ftco-section bg-light" id="blog-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading">Blog</span>
+                <h2 class="mb-4">My Blog</h2>
+                <p>Sometimes I like to write a small story about a project I've done or a program I was a part of!</p>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="single.html" class="block-20" style="background-image: url('images/verticalBoat.jpeg');">
+                    </a>
+                    <div class="text mt-3 float-right d-block">
+                        <div class="d-flex align-items-center mb-3 meta">
+                            <p class="mb-0">
+                                <span class="mr-2">Date Goes Here "March 4, 2001"</span>
+                            </p>
+                        </div>
+                        <h3 class="heading"><a href="single.html">Title of Article "Why I love the water"</a></h3>
+                        <p>Brief summary of the Article "I knew I loved the water since I was little.  I always had an attraction to it; I think it was the unknown that intrigued me".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="single.html" class="block-20" style="background-image: url('images/verticalBoat.jpeg');">
+                    </a>
+                    <div class="text mt-3 float-right d-block">
+                        <div class="d-flex align-items-center mb-3 meta">
+                            <p class="mb-0">
+                                <span class="mr-2">Date goes here "March 4, 2001"</span>
+                            </p>
+                        </div>
+                        <h3 class="heading"><a href="single.html">Title of Article "Why I love the water"</a></h3>
+                        <p>Brief summary of the Article "I knew I loved the water since I was little.  I always had an attraction to it; I think it was the unknown that intrigued me".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry">
+                    <a href="single.html" class="block-20" style="background-image: url('images/verticalBoat.jpeg');">
+                    </a>
+                    <div class="text mt-3 float-right d-block">
+                        <div class="d-flex align-items-center mb-3 meta">
+                            <p class="mb-0">
+                                <span class="mr-2">Date goes here "March 4, 2001"</span>
+                            </p>
+                        </div>
+                        <h3 class="heading"><a href="single.html">Title of Article "Why I love the water"</a></h3>
+                        <p>Brief summary of the Article "I knew I loved the water since I was little.  I always had an attraction to it; I think it was the unknown that intrigued me".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- contact me form -->
+<!-- IDK how to make it work really yet so it might not work -->
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading">Contact Me</span>
+                <h2 class="mb-4">Looking for me?</h2>
+                <p>Fill out the form below to send me a message through this site, feel free to Email, Text, or Call as well, as that may be seen quicker.</p>
+            </div>
+        </div>
+
+        <div class="row block-9">
+            <div class="col-md-8">
+                <!-- fills out the form with placeholders telling you what to type where -->
+                <form action="#" class="bg-light p-4 p-md-5 contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+
+            <div class="col-md-4 d-flex pl-md-5">
+                <div class="row">
+                    <div class="dbox w-100 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Address:</span>1205 University Walk Circle, Charlotte, NC, 28213</p>
+                        </div>
+                    </div>
+                    <div class="dbox w-100 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-phone"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Phone:</span> <a href="tel://1234567920">+1 (252)294-5950</a></p>
+                        </div>
+                    </div>
+                    <div class="dbox w-100 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-paper-plane"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Email:</span> <a href="mailto:lflaher2@uncc.edu">lflaher2@uncc.edu</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<footer class="ftco-footer ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Lets talk!</h2>
+                    <p>If you somehow ended up on my website and are reading this feel free to message me, I'd love to hear how you stumbled across me.</p>
+                    <p><a href="#about-section" class="btn btn-primary">Learn more</a></p>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2">Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#home-section"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+                        <li><a href="#about-section"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                        <li><a href="#skills-section"><span class="fa fa-chevron-right mr-2"></span>Skills</a></li>
+                        <li><a href="#projects-section"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
+                        <li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                        <li><a href="#blog-section"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have any Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">1205 University Walk Circle, Charlotte, NC, 28213</span></li>
+                            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+1 (252)294-5950</span></a></li>
+                            <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">lflaher2@uncc.edu</span></a></li>
+                        </ul>
+                    </div>
+                    <ul class="ftco-footer-social list-unstyled mt-2">
+                        <li class="ftco-animate"><a href="https://github.com/LukeFlaherty"><span class="fa fa-github"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.youtube.com/channel/UClbTqFBYzTDtdXcsV8EJwPw?view_as=subscriber"><span class="fa fa-youtube"></span></a></li>
+                        <li class="ftco-animate"><a href="https://twitter.com/luke0304"><span class="fa fa-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.instagram.com/lukejflaherty/"><span class="fa fa-instagram"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.facebook.com/luke.flaherty.792"><span class="fa fa-facebook"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- this is the ajax loader for loading the pages in-->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
